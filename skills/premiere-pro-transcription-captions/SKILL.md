@@ -3,18 +3,16 @@ name: premiere-pro-transcription-captions
 description: "Step-by-step workflow for transcribing sequences and generating captions in Premiere Pro's Text panel"
 category: workflow-research
 discipline: workflow-research
-visual_type: general
-tags:
-  - transcription
-  - captions
-  - subtitles
-  - accessibility
-  - premiere-pro
-providers:
-  - any
-apps:
-  - Adobe Premiere Pro
-requirements: "Premiere Pro 2022 or later with Text panel, stable internet for transcription"
+tags: ["transcription", "captions", "subtitles", "accessibility", "premiere-pro"]
+collection: ["col-documentary-finishing"]
+status: draft
+approval_status: pending
+publishing_status: not_ready
+compatibility:
+  providers: ["any"]
+  apps: ["Premiere Pro"]
+  requirements: "Premiere Pro 2022 or later with Text panel, stable internet for transcription"
+  notes: "Uses Adobe's built-in transcription service. Caption settings can be customized for testing alternatives."
 source: "Adobe Premiere Pro Documentation"
 ---
 
@@ -23,7 +21,6 @@ source: "Adobe Premiere Pro Documentation"
 **Purpose:** Create accurate, readable captions from edited sequences using Premiere Pro's built-in Text panel and transcription tools.
 
 ## When to Use
-
 - After completing rough cut in Scratch sequence
 - Before final export for accessibility
 - When creating social media captions
@@ -32,14 +29,12 @@ source: "Adobe Premiere Pro Documentation"
 ## Instructions
 
 ### Prerequisites
-
 1. Complete rough cut in Scratch sequence
 2. Save project
 3. Work in Final Sequence for captions (never in Scratch)
 4. Ensure sequence audio is properly mixed
 
 ### Phase 1: Transcription Setup
-
 1. Select your final sequence in the Project panel
 2. Open the **Text** panel (Window → Text)
 3. Click the **Transcript** tab
@@ -51,21 +46,18 @@ source: "Adobe Premiere Pro Documentation"
    - **Content Type**: Choose Interview, Conversation, or Other
 
 ### Phase 2: Transcription Process
-
 1. Wait for transcription to complete (varies by sequence length)
 2. Review transcript in Text panel
 3. Correct any obvious errors before captioning
 4. Use timestamps to verify accuracy
 
 ### Phase 3: Create Captions
-
 1. In Text panel, click **Captions** tab
 2. Click **Create Captions** button
 3. Select **From Transcript** option
 4. Choose caption format: **Subtitle**
 
 ### Phase 4: Default Caption Settings
-
 Apply these baseline settings before reviewing:
 
 | Setting | Value |
@@ -80,7 +72,6 @@ Apply these baseline settings before reviewing:
 **Note:** These settings provide a starting point. Test alternative minimum durations with actual content to optimize readability.
 
 ### Phase 5: Caption Styling (Optional)
-
 After initial creation, adjust for platform needs:
 1. **Position**: Usually bottom, leave 10% margin from bottom
 2. **Font**: Sans-serif, 24-28pt for 1080p
@@ -88,7 +79,6 @@ After initial creation, adjust for platform needs:
 4. **Color**: White with black outline for contrast
 
 ### Phase 6: Review and Refine
-
 1. Play through sequence with captions visible
 2. Check timing:
    - Captions should appear 0.5s before audio starts (for reading time)
@@ -100,7 +90,6 @@ After initial creation, adjust for platform needs:
    - Verify speaker labels if used
 
 ### Phase 7: Sync Verification
-
 1. Use **Synchronize and Offset** tool if captions drift
 2. Add manual corrections for:
    - Misheard words
@@ -108,19 +97,16 @@ After initial creation, adjust for platform needs:
    - Speaker changes
 
 ## Required Inputs
-
 - Completed Final Sequence
 - Audio properly mixed and cleared
 - Understanding of target platform requirements
 
 ## Expected Outputs
-
 - Transcribed transcript in Text panel
 - Caption file created from transcript
 - Verified, synchronized captions
 
 ## Quality Standards
-
 - 99%+ accuracy in transcribed text
 - Captions readable without strain
 - Proper timing (not too fast/slow)
@@ -128,28 +114,19 @@ After initial creation, adjust for platform needs:
 - Compliance with platform specifications
 
 ## Constraints and Limitations
-
 - Do not transcribe until rough cut is complete
 - Never work on Scratch sequence for captions
 - Do not apply captions to raw footage
 - Internet required for Adobe transcription service
 - Cannot transcribe offline media
 
-## Caption Constraints
-
-**Maximum 30 characters per caption line.**
-
-**Minimum caption duration: 3.0 seconds.**
-
-These constraints ensure readability on mobile devices and social media platforms.
-
-## Cross-Reference
-
-- See `dual-layer-split-caption` for alternate caption styling technique
-- For Premiere Pro workflow, use the transcription workflow first, then apply visual styling
+## Compatibility
+- Provider-Agnostic
+- Apps: Adobe Premiere Pro
+- Requirements: Premiere Pro 2022 or later with Text panel
+- Notes: For other platforms, export SRT and import. For DaVinci Resolve, use the Resolve transcription workflow.
 
 ## Testing Alternative Settings
-
 **Recommended test approach:**
 1. Create test sequence (15-30 seconds)
 2. Apply default settings (3.0s min duration)
@@ -157,14 +134,6 @@ These constraints ensure readability on mobile devices and social media platform
 4. Compare readability and pacing
 5. Obtain user approval before applying to full project
 
-## Compatibility
-
-- Provider-Agnostic
-- Apps: Adobe Premiere Pro
-- Requirements: Premiere Pro 2022 or later with Text panel
-- Notes: For other platforms, export SRT and import. For DaVinci Resolve, use the Resolve transcription workflow.
-
 ## Source and Attribution
-
 - Adobe Premiere Pro Documentation: Transcribe and Caption
 - Edit Central Caption Style Guidelines

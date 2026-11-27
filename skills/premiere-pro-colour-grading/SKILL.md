@@ -1,20 +1,18 @@
 ---
 name: premiere-pro-colour-grading
 description: "Colour correction and adjustment layer grading workflow for Premiere Pro"
-category: styles
-discipline: color-finishing
-visual_type: graphic-style
-tags:
-  - colour
-  - grading
-  - adjustment-layers
-  - correction
-  - premiere-pro
-providers:
-  - any
-apps:
-  - Adobe Premiere Pro
-requirements: "Premiere Pro, Lumetri Color panel, adjustment layer support"
+category: workflow-research
+discipline: workflow-research
+tags: ["colour", "grading", "adjustment-layers", "correction", "premiere-pro"]
+collection: ["col-documentary-finishing"]
+status: draft
+approval_status: pending
+publishing_status: not_ready
+compatibility:
+  providers: ["any"]
+  apps: ["Premiere Pro"]
+  requirements: "Premiere Pro, Lumetri Color panel, adjustment layer support"
+  notes: "Individual clips may need correction before shared grade. Adjustment layers preserve ability to refine individual shots."
 source: "Edit Central Colour Finishing Guidelines"
 ---
 
@@ -23,7 +21,6 @@ source: "Edit Central Colour Finishing Guidelines"
 **Purpose:** Develop a professional colour workflow that considers individual shot correction, exposure consistency, white balance, skin tones, contrast, and creative grading using Premiere Pro's adjustment layers.
 
 ## When to Use
-
 - After audio finishing is complete
 - Before captions (colour affects readability)
 - For any visual content requiring colour consistency
@@ -152,13 +149,11 @@ Create layers in this order (top to bottom):
 3. Blend: Overlay or Soft Light at 25-50% opacity
 
 ## Required Inputs
-
 - Edited sequence in Premiere Pro
 - Understanding of target aesthetic
 - Reference images (optional)
 
 ## Expected Outputs
-
 - Consistent exposure across all clips
 - Balanced white balance
 - Preserved skin tones
@@ -166,7 +161,6 @@ Create layers in this order (top to bottom):
 - Individual clips corrected where needed
 
 ## Quality Standards
-
 - Smooth, consistent colour throughout
 - Skin tones look natural, not oversaturated
 - No exposure jumps between clips
@@ -174,14 +168,18 @@ Create layers in this order (top to bottom):
 - Adjustment layers properly organised
 
 ## Constraints and Limitations
-
 - Do not crush blacks or clip highlights
 - Preserve detail in skin tones
 - Adjustment layers are non-destructive
 - Individual clip corrections override adjustment layers
 
-## Adjustment Layer Order (Recommended)
+## Compatibility
+- Provider-Agnostic
+- Apps: Adobe Premiere Pro
+- Requirements: Lumetri Color panel, adjustment layer support
+- Notes: For DaVinci Resolve, use the 16mm Halation Grade skill as reference but adapt to Resolve's colour page.
 
+## Adjustment Layer Order (Recommended)
 ```
 Top:    Creative Grade
           - Color LUT / Look
@@ -197,20 +195,7 @@ Bottom: Base Correction
           - General fixes
 ```
 
-## Cross-Reference
-
-- See `16mm-halation-slate-grade` for film stock emulation technique
-- See `professional-talking-head-editing` for integration with overall workflow
-
-## Compatibility
-
-- Provider-Agnostic
-- Apps: Adobe Premiere Pro
-- Requirements: Lumetri Color panel, adjustment layer support
-- Notes: For DaVinci Resolve, use the Resolve editing workflow's colour page or the 16mm Halation Grade skill as reference but adapt to Resolve's colour page architecture.
-
 ## Source and Attribution
-
 - Edit Central Colour Finishing Guidelines
 - Adobe Lumetri Color Documentation
-- Reference: `16mm-halation-slate-grade` for 16mm film emulation techniques
+- Reference: `skill-halation-film-grade` for 16mm film emulation techniques

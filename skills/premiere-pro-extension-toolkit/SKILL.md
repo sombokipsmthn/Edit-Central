@@ -3,19 +3,16 @@ name: premiere-pro-extension-toolkit
 description: "Guide to using Film Impact, Animation Composer, and Spread extensions in Premiere Pro"
 category: workflow-research
 discipline: workflow-research
-visual_type: general
-tags:
-  - extensions
-  - plugins
-  - transitions
-  - titles
-  - multicam
-  - premiere-pro
-providers:
-  - any
-apps:
-  - Adobe Premiere Pro
-requirements: "Premiere Pro with Film Impact, Animation Composer, and Spread extensions installed"
+tags: ["extensions", "plugins", "transitions", "titles", "multicam", "premiere-pro"]
+collection: ["col-documentary-finishing"]
+status: draft
+approval_status: pending
+publishing_status: not_ready
+compatibility:
+  providers: ["any"]
+  apps: ["Premiere Pro"]
+  requirements: "Premiere Pro with Film Impact, Animation Composer, and Spread extensions installed"
+  notes: "Extension functionality varies by version. Verify extensions are properly installed before use. Document extension-specific controls separately - do not invent functionality."
 source: "Extension Documentation and User Guides"
 ---
 
@@ -192,7 +189,6 @@ source: "Extension Documentation and User Guides"
 **Note:** Envato does not provide a native Premiere Pro extension. Assets must be downloaded and imported manually.
 
 ## Required Inputs
-
 - Premiere Pro 2020 or later
 - Film Impact Dashboard extension installed
 - Mr Horse Animation Composer extension installed
@@ -200,34 +196,29 @@ source: "Extension Documentation and User Guides"
 - Project media imported
 
 ## Expected Outputs
-
 - Access to enhanced transitions, titles, and multicam tools
 - Faster editing workflow with templates and presets
 - Consistent visual style across projects
 
 ## Quality Standards
-
 - Extension features work as documented
 - No project corruption from extension use
 - Templates and presets are reusable
 - Exported assets maintain quality
 
 ## Constraints and Limitations
-
 - Do not invent Spread functionality or controls
 - Extension features may vary by version
 - Some features require specific hardware acceleration
 - Always test new extension versions before production work
 
 ## Compatibility
-
 - Provider-Agnostic
 - Apps: Adobe Premiere Pro
 - Requirements: Film Impact Dashboard, Mr Horse Animation Composer, Spread extension installed
 - Notes: Extension documentation should be consulted for exact feature lists and version compatibility
 
 ## Source and Attribution
-
 - Film Impact Official Documentation
 - Mr Horse Animation Composer User Guide
 - Spread Extension Documentation: https://rhysobasi.store/products/spread
